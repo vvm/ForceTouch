@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VForceTouch"
-  s.version      = "0.0.2"
+  s.version      = "0.0.1"
   s.summary      = "A custom gesture recongnizer for force touch."
 
   # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   It works well with UITapGestureRecognizer.
                    DESC
 
-  s.homepage     = "https://github.com/vvm/VForceTouch"
+  s.homepage     = "https://github.com/vvm/ForceTouch"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/vvm/VForceTouch.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/vvm/ForceTouch.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
