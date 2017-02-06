@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8535A8561E488CC200D2E985 /* FTFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 8535A8541E488CC200D2E985 /* FTFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8535A85A1E488CFD00D2E985 /* VForceTouchGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 85967D821E2274D4005DDECA /* VForceTouchGestureRecognizer.h */; };
+		8535A85B1E488CFD00D2E985 /* VForceTouchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85967D831E2274D4005DDECA /* VForceTouchGestureRecognizer.m */; };
 		85967D6D1E2273B1005DDECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85967D6C1E2273B1005DDECA /* main.m */; };
 		85967D701E2273B1005DDECA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85967D6F1E2273B1005DDECA /* AppDelegate.m */; };
 		85967D731E2273B1005DDECA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85967D721E2273B1005DDECA /* ViewController.m */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8535A8521E488CC200D2E985 /* FTFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FTFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8535A8541E488CC200D2E985 /* FTFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTFrameWork.h; sourceTree = "<group>"; };
+		8535A8551E488CC200D2E985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85967D681E2273B1005DDECA /* ForceTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForceTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85967D6C1E2273B1005DDECA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85967D6E1E2273B1005DDECA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +38,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8535A84E1E488CC200D2E985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85967D651E2273B1005DDECA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8535A8531E488CC200D2E985 /* FTFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				8535A8541E488CC200D2E985 /* FTFrameWork.h */,
+				8535A8551E488CC200D2E985 /* Info.plist */,
+			);
+			path = FTFrameWork;
+			sourceTree = "<group>";
+		};
 		854B53031E30BFC100CF02A3 /* Class */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				85967D6A1E2273B1005DDECA /* ForceTouch */,
+				8535A8531E488CC200D2E985 /* FTFrameWork */,
 				85967D691E2273B1005DDECA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				85967D681E2273B1005DDECA /* ForceTouch.app */,
+				8535A8521E488CC200D2E985 /* FTFrameWork.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +118,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		8535A84F1E488CC200D2E985 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8535A8561E488CC200D2E985 /* FTFrameWork.h in Headers */,
+				8535A85A1E488CFD00D2E985 /* VForceTouchGestureRecognizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		8535A8511E488CC200D2E985 /* FTFrameWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8535A8591E488CC200D2E985 /* Build configuration list for PBXNativeTarget "FTFrameWork" */;
+			buildPhases = (
+				8535A84D1E488CC200D2E985 /* Sources */,
+				8535A84E1E488CC200D2E985 /* Frameworks */,
+				8535A84F1E488CC200D2E985 /* Headers */,
+				8535A8501E488CC200D2E985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FTFrameWork;
+			productName = FTFrameWork;
+			productReference = 8535A8521E488CC200D2E985 /* FTFrameWork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		85967D671E2273B1005DDECA /* ForceTouch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85967D7F1E2273B1005DDECA /* Build configuration list for PBXNativeTarget "ForceTouch" */;
@@ -121,6 +175,10 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = vee;
 				TargetAttributes = {
+					8535A8511E488CC200D2E985 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					85967D671E2273B1005DDECA = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -141,11 +199,19 @@
 			projectRoot = "";
 			targets = (
 				85967D671E2273B1005DDECA /* ForceTouch */,
+				8535A8511E488CC200D2E985 /* FTFrameWork */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8535A8501E488CC200D2E985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85967D661E2273B1005DDECA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +225,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8535A84D1E488CC200D2E985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8535A85B1E488CFD00D2E985 /* VForceTouchGestureRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85967D641E2273B1005DDECA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -192,6 +266,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8535A8571E488CC200D2E985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FTFrameWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.FTFrameWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8535A8581E488CC200D2E985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FTFrameWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.FTFrameWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		85967D7D1E2273B1005DDECA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -311,6 +429,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8535A8591E488CC200D2E985 /* Build configuration list for PBXNativeTarget "FTFrameWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8535A8571E488CC200D2E985 /* Debug */,
+				8535A8581E488CC200D2E985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		85967D631E2273B1005DDECA /* Build configuration list for PBXProject "ForceTouch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

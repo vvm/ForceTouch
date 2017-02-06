@@ -1,0 +1,25 @@
+language: objective-c
+osx_image: xcode8.2
+xcode_project: ForceTouch.xcodeproj
+xcode_scheme: FTFrameWork
+xcode_sdk: iphonesimulator10.2
+env:
+  global:
+  - FRAMEWORK_NAME=ForceTouch
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+before_script:
+- carthage bootstrap
+before_deploy:
+- carthage build --no-skip-current
+- carthage archive $FRAMEWORK_NAME
+deploy:
+  provider: releases
+  api_key:
+    secure: TvgydyOAPKLnXdwNzWbrtDfD2uDnzITgiqFOBwAplSxG8ZwEQ5iMl0Oxvxtvag8Jyqy3WFcJu6rSblEsoEMDUvzLT/Owytz58f6PbnrNb1Fg0AwzzEWEBEDK7NLERmN3C9o37xulZ0O3eDRQYBPCPBdahbvYfrXq2ibeETeI7ujp+lLPjPhqWLjmgAvny0oL7aEJjvJ0Nc8PLpYCvDD53WGSmqkUYEHW/WujzUH2+NjwKJJPcinKc6YL4CRDYdaB7S2tbo18NXazJlS/5E5OaoWpw/D3zaFEzZ9d8vgYVKgfEGiVimXB6RAM7Nmlgmc7Ftl7VM9G0ZD5zgrPewyuxmOcU9+IaR7Go7IGZiODAvqu1o06zu3K4xo29PP+07un98ZYUoPswgRj2yC6zyaWo1Gj/SgN4P6eky93QEA+CS9jpz6BBjPhsSj1mrnYeJGW+RN8Uw+dkD1F304xoqSh23BYfUUEzD5/pMICM3xhv/+ZI140p55aWDGReSDQsDJ+GLlqGaj77ZpJjNAUrVbsTqdXMMQ7EpKHt0RyijhYceKuxAiJsBnfDuCjI2Cple5IAttWQL4zJxASOJ8nmGCvxbdpMgK+Lq5GRNtdA3obwowOuGeZVioZrXUodSe+0hOcKdhCUgIL8WCrbjuJRTBR5pv/KdN0EUsFqPELKnZ4fgY=
+  file: $ForceTouch.framework.zip
+  skip_cleanup: true
+  on:
+    repo: vvm/ForceTouch
+    tags: true
